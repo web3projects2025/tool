@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTax Tools - Free Crypto Tax Calculator & Education</title>
+    <meta name="description" content="Free cryptocurrency tax calculator and educational resources. Calculate capital gains, learn about wallets, exchanges, and crypto risks. Not financial advice.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">CryptoTax<span>Tools</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Tax Calculator</a></li>
+                    <li><a href="wallets.html">Wallets Guide</a></li>
+                    <li><a href="exchanges.html">Exchanges Guide</a></li>
+                    <li><a href="education.html">Crypto Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Free Crypto Tax Calculator & Educational Tools</h1>
+                <p class="disclaimer">⚠️ Educational tool only. Not financial or tax advice. Consult a licensed professional for tax filing.</p>
+                <div class="calculator-preview">
+                    <h2>Calculate Your Crypto Taxes Instantly</h2>
+                    <div class="form-grid">
+                        <input type="number" id="homeBuy" placeholder="Buy Amount ($)">
+                        <input type="number" id="homeSell" placeholder="Sell Amount ($)">
+                        <select id="homePeriod">
+                            <option value="short">Short-term (< 1 year)</option>
+                            <option value="long">Long-term (> 1 year)</option>
+                        </select>
+                        <button onclick="quickCalc()" class="btn-primary">Calculate Tax</button>
+                    </div>
+                    <div id="homeResult" class="result-box" style="display:none;"></div>
+                    <p style="margin-top: 15px;"><a href="calculator.html" class="btn-secondary">Use Full Calculator</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Learn Cryptocurrency Safely</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <img src="images/wallet-types.jpg" alt="Crypto Wallets">
+                        <h3>Wallet Types Explained</h3>
+                        <p>Compare hardware, software, hot & cold wallets. Security pros and cons.</p>
+                        <a href="wallets.html">Learn More →</a>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/exchange-chart.jpg" alt="Exchanges">
+                        <h3>Exchange Comparison</h3>
+                        <p>Centralized vs decentralized exchanges. Fees, features, and risks.</p>
+                        <a href="exchanges.html">Learn More →</a>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/education-books.jpg" alt="Crypto Education">
+                        <h3>Investment Risks & Rewards</h3>
+                        <p>Understand volatility, market risks, and profit potential in crypto.</p>
+                        <a href="education.html">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 CryptoTax Tools | Educational Platform</p>
+            <p class="disclaimer">Not financial advice. No investment recommendations provided.</p>
+            <nav>
+                <a href="legal/disclaimer.html">Disclaimer</a> | 
+                <a href="legal/privacy.html">Privacy Policy</a> | 
+                <a href="mailto:support@cryptotaxtool.io">Email Support</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/calculator.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
